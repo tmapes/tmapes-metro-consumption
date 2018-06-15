@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "tmapes-metro-consumption": {
+      "commandName": "Project",
+      "commandLineArgs": "\"METRO Green Line\" \"Nicollet Mall Station\" \"east\""
+    }
+  }
+}
