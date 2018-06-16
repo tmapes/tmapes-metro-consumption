@@ -32,14 +32,14 @@ Appending 'tests' as a fourth parameter will run the given arguments as well as 
 to make sure the logic checker still works.
   
 ## Sample Output
-`"METRO Green Line" "Nicollet Mall Station" "east"` (At 5:35 PM CDT)  
-`5:44`  
-`"METRO Green Line" "Nicollet Mall Station" "east" "tests"` (At 5:35 PM CDT)  
+`"METRO Green Line" "Nicollet Mall Station" "east"` (At 8:29 PM CDT)  
+`9 Minutes`  
+`"METRO Green Line" "Nicollet Mall Station" "east" "tests"` (At 8:29 PM CDT)  
 ```Testing with arguments:  
 BUS_ROUTE : METRO Green Line  
 BUS_STOP_NAME : Nicollet Mall Station  
 DIRECTION: east  
-5:44  
+9 Minutes  
   
 Testing BP Campus to TNC  
   

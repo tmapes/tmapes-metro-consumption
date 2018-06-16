@@ -16,7 +16,7 @@ namespace tmapes_metro_consumption
             if (selectedRoute == null) return "invalid bus route name";
 
 
-            Direction selectedDirection;
+            Direction selectedDirection = 0;
             var isRealDirection = Direction.TryParse(direction, out selectedDirection);
             if(!isRealDirection)
                 return "nonreal direction";
@@ -77,7 +77,11 @@ namespace tmapes_metro_consumption
             var departureResponse = MetroRootClient.Execute<List<TimepointDepartureModel>>(departureRequest);
             if (departureResponse.Data != null && departureResponse.Data.Count > 0)
             {
-                return departureResponse.Data[0].DepartureText;
+                //Returns the amount of minutes between 'now' and the departure time
+                return (departureResponse.Data[0].DepartureTime - DateTime.Now).TotalMinutes.ToString().Substring(0,1) + " Minutes";
+
+                //Otherwise we can return direction what MT gives
+                //return departureResponse.Data[0].DepartureText;
             }
             //Return an empty string if we cannot find any upcoming departures
             return string.Empty;
