@@ -44,7 +44,7 @@ DIRECTION: east
 Testing BP Campus to TNC  
   
 Testing Lightrail to Target Field  
-5:45  
+7 Minutes  
 
 Testing Invalid Bus_Route  
 invalid bus route name  
